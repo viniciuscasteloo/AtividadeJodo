@@ -9,6 +9,10 @@ public class MultiplosDeCinco {
     }
 }
 //Atividade2
+import java.util.Scanner;
+
+public class Main {
+
 public class VerificaCredito {
 
     public static void main(String[] args) {
