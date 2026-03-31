@@ -9,3 +9,36 @@ public class MultiplosDeCinco {
     }
 }
 //Atividade2
+public class VerificaCredito {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Número da conta: ");
+        int numeroConta = scanner.nextInt();
+
+        System.out.print("Saldo no início do mês: ");
+        double saldoInicial = scanner.nextDouble();
+
+        System.out.print("Total de despesas no mês: ");
+        double despesas = scanner.nextDouble();
+
+        System.out.print("Total de créditos no mês: ");
+        double creditos = scanner.nextDouble();
+
+        System.out.print("Limite de crédito: ");
+        double limiteCredito = scanner.nextDouble();
+
+        double novoSaldo = saldoInicial + despesas - creditos;
+
+        System.out.println("\nConta: " + numeroConta);
+        System.out.println("Novo saldo: " + novoSaldo);
+
+        if (novoSaldo > limiteCredito) {
+            System.out.println("Limite de crédito excedido");
+        }
+
+        scanner.close();
+    }
+}
+//Atividade3
