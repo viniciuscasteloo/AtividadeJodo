@@ -46,3 +46,23 @@ public class VerificaCredito {
     }
 }
 //Atividade3
+while (tentativas < 3) {
+            System.out.print("Digite a senha numérica: ");
+            senhaDigitada = scanner.nextInt();
+
+            if (senhaDigitada == senhaCorreta) {
+                System.out.println("Acesso permitido");
+                break;
+            } else {
+                tentativas++;
+                System.out.println("Senha incorreta");
+
+                if (tentativas == 3) {
+                    System.out.println("Acesso bloqueado");
+                }
+            }
+        }
+
+        scanner.close();
+    }
+}
