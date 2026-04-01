@@ -46,7 +46,17 @@ public class VerificaCredito {
     }
 }
 //Atividade3
-while (tentativas < 3) {
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int senhaCorreta = 1234;
+        int tentativas = 0;
+        int senhaDigitada;
+
+        while (tentativas < 3) {
             System.out.print("Digite a senha numérica: ");
             senhaDigitada = scanner.nextInt();
 
